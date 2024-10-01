@@ -121,6 +121,17 @@ article>p.paragrafo1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+    .banguela {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 29px;
+        width: 20%;
+        border-radius: 7px 7px 7px 7px;
+        border-color: #123f15;
+        border-style: ridge;
+    }
+
 footer {
     background-color: #356441;
     color: #000;
@@ -342,17 +353,6 @@ footer {
         padding-bottom: 17px;
         width: 90vw;
         margin: 5px;
-    }
-
-    .banguela {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 29px;
-        width: 20%;
-        border-radius: 7px 7px 7px 7px;
-        border-color: #123f15;
-        border-style: ridge;
     }
 
     footer {
