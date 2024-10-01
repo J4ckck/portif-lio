@@ -1,0 +1,358 @@
+@charset "utf-8";
+
+/*colocar paleta de cores aqui:
+.color1 { #1c0b2b };
+.color2 { #301c41 };
+.color3 { #413b6b };
+.color4 { #5c65c0 };
+.color5 { #6f95ff };
+
+ device breakpoints
+     mobile 600 px 
+     tablet 768 px
+     desktop 992 px
+     smart_tv 1200 px
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /* calcular a borda em relação ao tamanho*/
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* definir o tamanho da tela sempre forçamdo o não extender a tela */
+
+html {
+    height: 100vh;
+}
+
+/* definição do tamanho da tela */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #223120, #e7bfa5);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-image: url("../back-phone.jpg");
+}
+
+header {
+    background-color: #1c0b2b;
+    margin-top: 3px;
+    border-radius: 7px 7px 0px 0px;
+    width: 90vw;
+    margin: auto;
+}
+
+header>h1 {
+    text-align: center;
+    color: #ffffff;
+    padding: 3px;
+    text-shadow: #45683c 5px 5px 10px;
+    margin-top: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#burguer {
+    background-color: #1c0b2b;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+    width: 90vw;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: #1c0b2b;
+}
+
+.invisible {
+    display: none;
+}
+
+menu {
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    list-style-type: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+/*menu é equivalente a nav nesse caso*/
+menu>ul {
+    list-style-type: none;
+}
+
+menu>ul>li>a {
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #21203f;
+    border-radius: 7px 7px 7px 7px;
+    color: whitesmoke;
+    margin: auto;
+}
+
+menu>ul>li>a:hover {
+    background-color: #413b6b;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+main {
+    background-color: #21572d;
+    width: 90vw;
+    height: 140vw;
+    margin: auto;
+    border-radius: 7px 7px 0px 0px;
+    margin-top: 7px;
+    padding: 3px;
+}
+
+.paragrafo1 {
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.banguela {
+    float: left;
+    margin: 8px;
+    width: 20%;
+    border-radius: 7px 7px 7px 7px;
+    justify-content: space-around
+}
+
+footer {
+    background-color: #356441;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 0px 0px 7px 7px;
+    width: 90vw;
+    padding: 7px;
+    margin: auto;
+}
+
+/* tablet 768 992 */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url("../back-tablet.jpg");
+
+    }
+
+    #burguer {
+        display: block;
+        text-align: center;
+    }
+
+
+    menu {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        background-color: #21203f;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #21203f;
+
+    }
+
+    menu>ul>li>a {
+        display: block;
+        padding: 7px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #21203f;
+        border-radius: 7px 7px 7px 7px;
+        color: whitesmoke;
+        margin: auto;
+    }
+
+    menu>ul>li>a:hover {
+        background-color: #413b6b;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>p.paragrafo1 {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+}
+
+/* pc 992 1200 */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url("../back-pc.jpg");
+
+    }
+
+    #burguer {
+        display: block;
+        text-align: center;
+    }
+
+
+    menu {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        background-color: #21203f;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #21203f;
+
+    }
+
+    menu>ul>li>a {
+        display: block;
+        padding: 7px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #21203f;
+        border-radius: 7px 7px 7px 7px;
+        color: whitesmoke;
+        margin: auto;
+    }
+
+    menu>ul>li>a:hover {
+        background-color: #413b6b;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>p.paragrafo1 {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+}
+
+
+/*  tv 1200 */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url("../back-tv.png");
+        background-size: 100% 150%;
+        background-attachment: fixed;
+
+    }
+
+    #burguer {
+        display: block;
+        text-align: center;
+    }
+
+    menu {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        background-color: #123f15;
+    }
+
+    menu>ul>li {
+        display: inline-block;
+        background-color: #123f15;
+
+    }
+
+    menu>ul>li>a {
+        display: block;
+        padding: 7px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #123f15;
+        border-radius: 7px 7px 7px 7px;
+        color: whitesmoke;
+        margin: auto;
+    }
+
+    menu>ul>li>a:hover {
+        background-color: #22972a;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    main {
+        width: 90vw;
+        height: 160vw;
+        margin: auto;
+        background-color: #3a493b;
+    }
+
+    main>article>p.paragrafo1 {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+        font-weight: bold;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+        width: 90vw;
+        margin: 5px;
+    }
+
+    .banguela {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 29px;
+        width: 20%;
+        border-radius: 7px 7px 7px 7px;
+        border-color: #123f15;
+        border-style:ridge;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+}

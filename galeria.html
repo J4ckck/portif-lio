@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--A linha 1 não é uma tag e sim uma declaração para informar ao navegador qual versão do html estamos usando no arquivo
+DOCTYPE: Document Type Declaration-->
+<html lang="pt-br">
+<!--"html": Hiper Text Marked Language ou linguagem de marcação de hipertexto, é a tag raiz do documento-->
+
+
+<head>
+    <!--organizar metadados
+    sempre acima do body-->
+    <meta charset="UTF-8">
+    <!--Forma de indicar qual loógica binária foi utilizada para armazenar caractéries dentro de bits
+    “meta”: metadados; “charset”: conjunto de caractéries; “UTF-8”: conjunto de caractéries que inclui muitos idiomas-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--name= viewport”: ; “content”: ; “width=device-width” indica que a largura da página deve ser igual a largura; 
+     “initial-scale=1.0” indica que a página deve ser exibida com uma esc
+    -->
+    <title>portifólio_jack_</title>
+
+    <link rel="shortcut icon" href="./assets/galeria.icon.png" type:"image/x-icon">
+    <link rel="stylesheet" href="./assets/css/stylegaleria.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <!-- link para o css do menu mobile; link para o css do google fonts -->
+</head>
+
+<body onresize="mudouTamanho()">
+    <header>
+        <!--A Tag H1 serve para definir o texto como titulo-->
+        <h1>Galeria do Banguela</h1>
+    </header>
+    <!-- Usando o google icons o menu é criado, junto com uma função usado no
+      javascript para exibir o menu burger no evento de onclik-->
+
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+        menu
+    </span>
+    <!-- Todos os links do menu pertence ao um conteiner com uma lista não numerada
+     e um id para ser usado no Medias Queries-->
+
+    <menu id="itens">
+        <ul>
+            <li class="invisible"><A href="#"> mobile </A></li>
+            <li class="invisible"><A href="#"> tablet </A></li>
+            <li class="invisible"><A href="#"> desktop </A></li>
+            <li class="invisible"><A href="#"> smart_tv </A></li>
+<!-- <button></button> -->
+            <li><A href="inicio.html"> Inicio </A></li>
+            <li><A href="galeria.html"> galeria </A></li>
+            <li><A href="historias.html"> histórias </A></li>
+            <li><A href="fanarts.html"> fanarts </A></li>
+        </ul>
+
+    </menu>
+
+    <!-- Todas as imagens são oculta pelo atributo none, e a cada mudança de resolução
+      de tela será exibido somente as imagens que pertence a cada tela-->
+    <main>
+        <!--<section>
+            <div>
+                <img src="/assents/foto_banguela.png" alt="foto-de-um-gato-preto-olhando-a grama" width="30%"
+                    height="30%" </div>-->
+        <!-- Dentro  do main foi criado um div com um id para ser usado no Medias Queries
+         e dentro dele foi criado um div com um id para ser usado no Medias Queries
+         onde a estrutura article será redimencionada para cada visualização de tela-->
+        <article>
+            <p class="paragrafo1">
+                Nosso gatinho ja passou por muitas fases...
+            </p>
+        </article>
+
+        <img src="./assets/banguela/banguela1.png" alt="banguela na janela" class="banguela">
+        <img src="./assets/banguela/banguela2.png" alt="banguela deitado no chão" class="banguela">
+        <img src="./assets/banguela/banguela3.png" alt="banguela jogado no sofá" class="banguela">
+        <img src="./assets/banguela/banguela4.png" alt="banguela deitado em cima da mesa" class="banguela">
+        <img src="./assets/banguela/banguela5.png" alt="banguela com as garras para fora" class="banguela">
+        <img src="./assets/banguela/banguela6.png" alt="banguela deitado no Jack" class="banguela">
+        <img src="./assets/banguela/banguela7.png" alt="banguela deitado na caixa" class="banguela">
+        <img src="./assets/banguela/banguela8.png" alt="banguela deitado na coberta" class="banguela">
+        <img src="./assets/banguela/banguela9.png" alt="banguela deitado em cima do seu tapetinho" class="banguela">
+        <img src="./assets/banguela/banguela10.png" alt="banguela bocejando" class="banguela">
+        <img src="./assets/banguela/banguela11.png" alt="banguela dormindo gostoso" class="banguela">
+        <img src="./assets/banguela/banguela12.png" alt="banguela deitado em cima do braço do Jack" class="banguela">
+        <img src="./assets/banguela/banguela13.png" alt="banguela deitado em cima da cama" class="banguela">
+        <img src="./assets/banguela/banguela14.png" alt="banguela dormindo gostoso 2" class="banguela">
+
+    </main>
+
+
+    <footer>
+        <p>
+            Feito por Jack 2024
+        </p>
+
+    </footer>
+
+
+    </main>
+
+
+    <script src="./assets/js/script.galeria.js">
+
+    </script>
+</body>
+<!--problemas encontrados: código não fechado, letras maiusculas, id não condizendo com o css-->
+
+</html>
