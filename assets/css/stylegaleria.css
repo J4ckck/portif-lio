@@ -1,18 +1,18 @@
 @charset "utf-8";
 
-/*colocar paleta de cores aqui:
-.color1 { #21203f };
-.color2 { #45683c };
-.color3 { #21572d };
-.color4 { #356441 };
-.color5 { #6f95ff };
+/* colocar paleta de cores aqui: */
+/* .color1 { #3a493b }; */
+/* .color2 { #45683c };verde pastel */
+/* .color3 { #21572d }; verde forte */
+/* .color4 { #356441 }; */
+/* .color5 { #123f15 }; verde forte */
 
- device breakpoints
-     mobile 600 px 
-     tablet 768 px
-     desktop 992 px
-     smart_tv 1200 px
-*/
+/* device breakpoints */
+/* mobile 600 px  */
+/* tablet 768 px */
+/* desktop 992 px */
+/* smart_tv 1200 px */
+
 
 * {
     margin: 0;
@@ -31,7 +31,7 @@ html {
 /* definição do tamanho da tela */
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to bottom, #223120, #e7bfa5);
+    background-image: linear-gradient(to bottom, #123f15, #e7bfa5);
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: scroll;
@@ -39,7 +39,7 @@ body {
 }
 
 header {
-    background-color: #1c0b2b;
+    background-color: #45683c;
     margin-top: 3px;
     border-radius: 7px 7px 0px 0px;
     width: 90vw;
@@ -56,7 +56,7 @@ header>h1 {
 }
 
 #burguer {
-    background-color: #1c0b2b;
+    background-color: #123f15;
     display: block;
     color: whitesmoke;
     text-align: center;
@@ -64,10 +64,12 @@ header>h1 {
     padding: 7px;
     width: 90vw;
     cursor: pointer;
+    border-radius: 0px 0px 7px 7px;
 }
 
 #burguer:hover {
-    background-color: #1c0b2b;
+    background-color: #123f15;
+
 }
 
 .invisible {
@@ -78,41 +80,53 @@ menu {
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: auto;
+    width: 90vw;
     list-style-type: none;
     text-align: center;
     font-size: 16px;
+    display: none;
+
 }
 
 /*menu é equivalente a nav nesse caso*/
 menu>ul {
     list-style-type: none;
+
 }
 
 menu>ul>li>a {
-    display: block;
     padding: 7px;
     text-decoration: none;
     text-align: center;
-    background-color: #21203f;
+    background-color: #123f15;
     border-radius: 7px 7px 7px 7px;
     color: whitesmoke;
     margin: auto;
+    display: block;
 }
 
 menu>ul>li>a:hover {
-    background-color: #413b6b;
+    background-color: #398159;
     color: whitesmoke;
     text-decoration: none;
+    padding: 7px;
+    width: 90vw;
 }
 
 main {
-    background-color: #21572d;
+    background-color: #3a493b;
     width: 90vw;
-    height: 140vw;
+    height: 190vw;
     margin: auto;
     border-radius: 7px 7px 0px 0px;
     margin-top: 7px;
     padding: 3px;
+}
+
+
+span>#material-symbols-outlined {
+    font-size: 30px;
+    display: flex;
 }
 
 article>p.paragrafo1 {
@@ -122,15 +136,13 @@ article>p.paragrafo1 {
 }
 
 .banguela {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 29px;
+    justify-content: space-evenly;
+    margin: 20px;
     width: 20%;
     border-radius: 7px 7px 7px 7px;
     border-color: #123f15;
     border-style: ridge;
-    }
+}
 
 footer {
     background-color: #356441;
@@ -144,6 +156,11 @@ footer {
     margin: auto;
 }
 
+
+/* jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj */
+
+
+
 /* tablet 768 992 */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
@@ -151,39 +168,52 @@ footer {
     }
 
     #burguer {
+        background-color: #123f15;
         display: block;
+        color: whitesmoke;
         text-align: center;
+        margin: auto;
+        padding: 7px;
+        width: 90vw;
+        cursor: pointer;
+        border-radius: 0px 0px 7px 7px;
     }
 
 
     menu {
-        display: block;
-        width: 90vw;
+        color: #ffffff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         margin: auto;
-        background-color: #21203f;
+        width: 90vw;
+        list-style-type: none;
+        text-align: center;
+        font-size: 16px;
+        display: none;
     }
-
-    menu>ul>li {
-        display: inline-block;
-        background-color: #21203f;
-
+    
+    /*menu é equivalente a nav nesse caso*/
+    menu>ul {
+        list-style-type: none;
+    
     }
-
+    
     menu>ul>li>a {
-        display: block;
         padding: 7px;
         text-decoration: none;
         text-align: center;
-        background-color: #21203f;
+        background-color: #123f15;
         border-radius: 7px 7px 7px 7px;
         color: whitesmoke;
         margin: auto;
+        display: block;
     }
-
+    
     menu>ul>li>a:hover {
-        background-color: #413b6b;
+        background-color: #64af6e;
         color: whitesmoke;
         text-decoration: none;
+        padding: 7px;
+        width: 90vw;
     }
 
     main {
@@ -203,17 +233,15 @@ footer {
         text-indent: 17px;
     }
 
- .banguela {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 29px;
-    width: 20%;
-    border-radius: 7px 7px 7px 7px;
-    border-color: #123f15;
-    border-style: ridge;
+    .banguela {
+        justify-content: space-evenly;
+        margin: 20px;
+        width: 20%;
+        border-radius: 7px 7px 7px 7px;
+        border-color: #123f15;
+        border-style: ridge;
     }
- 
+
     footer {
         width: 90vw;
         margin: auto;
@@ -233,35 +261,41 @@ footer {
         text-align: center;
     }
 
-
     menu {
-        display: block;
-        width: 90vw;
+        color: #ffffff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         margin: auto;
-        background-color: #21203f;
+        width: 90vw;
+        list-style-type: none;
+        text-align: center;
+        font-size: 16px;
+        display: none;
+    
     }
-
-    menu>ul>li {
-        display: inline-block;
-        background-color: #21203f;
-
+    
+    /*menu é equivalente a nav nesse caso*/
+    menu>ul {
+        list-style-type: none;
+    
     }
-
+    
     menu>ul>li>a {
-        display: block;
         padding: 7px;
         text-decoration: none;
         text-align: center;
-        background-color: #21203f;
+        background-color: #123f15;
         border-radius: 7px 7px 7px 7px;
         color: whitesmoke;
         margin: auto;
+        display: block;
     }
-
+    
     menu>ul>li>a:hover {
-        background-color: #413b6b;
+        background-color: #398159;
         color: whitesmoke;
         text-decoration: none;
+        padding: 7px;
+        width: 90vw;
     }
 
     main {
@@ -281,17 +315,15 @@ footer {
         text-indent: 17px;
     }
 
-  .banguela {
-        display: flex;
+    .banguela {
         justify-content: space-evenly;
-        align-items: center;
-        margin: 29px;
+        margin: 20px;
         width: 20%;
         border-radius: 7px 7px 7px 7px;
         border-color: #123f15;
         border-style: ridge;
     }
- 
+
     footer {
         width: 90vw;
         margin: auto;
@@ -315,20 +347,24 @@ footer {
     }
 
     menu {
-        display: block;
-        width: 90vw;
+        color: #ffffff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         margin: auto;
-        background-color: #123f15;
+        width: 90vw;
+        list-style-type: none;
+        text-align: center;
+        font-size: 16px;
+        display: none;
+    
     }
-
-    menu>ul>li {
-        display: inline-block;
-        background-color: #123f15;
-
+    
+    /*menu é equivalente a nav nesse caso*/
+    menu>ul {
+        list-style-type: none;
+    
     }
-
+    
     menu>ul>li>a {
-        display: block;
         padding: 7px;
         text-decoration: none;
         text-align: center;
@@ -336,12 +372,15 @@ footer {
         border-radius: 7px 7px 7px 7px;
         color: whitesmoke;
         margin: auto;
+        display: block;
     }
-
+    
     menu>ul>li>a:hover {
-        background-color: #22972a;
+        background-color: #398159;
         color: whitesmoke;
         text-decoration: none;
+        padding: 7px;
+        width: 90vw;
     }
 
     main {
@@ -365,10 +404,8 @@ footer {
     }
 
     .banguela {
-        display: flex;
         justify-content: space-evenly;
-        align-items: center;
-        margin: 29px;
+        margin: 20px;
         width: 20%;
         border-radius: 7px 7px 7px 7px;
         border-color: #123f15;
