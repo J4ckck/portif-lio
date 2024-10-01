@@ -121,15 +121,15 @@ article>p.paragrafo1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-    .banguela {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 29px;
-        width: 20%;
-        border-radius: 7px 7px 7px 7px;
-        border-color: #123f15;
-        border-style: ridge;
+.banguela {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 29px;
+    width: 20%;
+    border-radius: 7px 7px 7px 7px;
+    border-color: #123f15;
+    border-style: ridge;
     }
 
 footer {
@@ -148,7 +148,6 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: url("../back-tablet.png");
-
     }
 
     #burguer {
@@ -204,7 +203,17 @@ footer {
         text-indent: 17px;
     }
 
-
+ .banguela {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 29px;
+    width: 20%;
+    border-radius: 7px 7px 7px 7px;
+    border-color: #123f15;
+    border-style: ridge;
+    }
+ 
     footer {
         width: 90vw;
         margin: auto;
@@ -353,6 +362,17 @@ footer {
         padding-bottom: 17px;
         width: 90vw;
         margin: 5px;
+    }
+
+    .banguela {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 29px;
+        width: 20%;
+        border-radius: 7px 7px 7px 7px;
+        border-color: #123f15;
+        border-style: ridge;
     }
 
     footer {
