@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/* colocar paleta de cores aqui: */
+/* .color1 { #3a493b }; */
+/* .color2 { #45683c };verde pastel */
+/* .color3 { #21572d }; verde forte */
+/* .color4 { #356441 }; */
+/* .color5 { #123f15 }; verde forte */
+
+/* device breakpoints */
+/* mobile 600 px  */
+/* tablet 768 px */
+/* desktop 992 px */
+/* smart_tv 1200 px */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* calcular a borda em relação ao tamanho*/
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* definir o tamanho da tela sempre forçamdo o não extender a tela */
+
+html {
+    height: 100vh;
+}
+
+/* definição do tamanho da tela */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #123f15, #e7bfa5);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-image: url("../back-print.png");
+}
+
+header {
+    background-color: #45683c;
+    margin-top: 3px;
+    border-radius: 7px 7px 0px 0px;
+    width: 90vw;
+    margin: auto;
+}
+
+header>h1 {
+    text-align: center;
+    color: #ffffff;
+    padding: 3px;
+    text-shadow: #45683c 5px 5px 10px;
+    margin-top: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#burguer {
+    background-color: #123f15;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+    width: 90vw;
+    cursor: pointer;
+    border-radius: 0px 0px 7px 7px;
+}
+
+#burguer:hover {
+    background-color: #123f15;
+
+}
+
+.invisible {
+    display: none;
+}
+
+menu {
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    width: 90vw;
+    list-style-type: none;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+
+}
+
+/*menu é equivalente a nav nesse caso*/
+menu>ul {
+    list-style-type: none;
+}
+
+menu>ul>li>a {
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #123f15;
+    border-radius: 7px 7px 7px 7px;
+    color: whitesmoke;
+    margin: auto;
+    display: block;
+}
+
+menu>ul>li>a:hover {
+    background-color: #398159;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 7px;
+    width: 90vw;
+}
+
+main {
+    background-color: #3a493b;
+    width: 90vw;
+    height: 100%;
+    margin: auto;
+    border-radius: 7px 7px 0px 0px;
+    margin-top: 7px;
+    padding: 30px;
+    text-align: center;
+
+}
+
+
+span>#material-symbols-outlined {
+    font-size: 30px;
+    display: flex;
+}
+
+article>p.paragrafo1 {
+    font-weight: bold;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    margin-bottom: 17px;
+    text-indent: 17px;
+
+}
+
+img.banguela {
+    display: inline-block;
+    margin: 10px;
+    padding: 1%;
+    width: 20%;
+    border-radius: 8px;
+    border-color: #123f15;
+    border-style: ridge;
+}
+
+footer {
+    background-color: #356441;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 0px 0px 7px 7px;
+    width: 90vw;
+    padding: 7px;
+    margin: auto;
+}
+
+/* tablet 768 992 */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        background-image: url("../back-print.png");
+    }
+
+    #burguer {
+        background-color: #123f15;
+        display: block;
+        color: whitesmoke;
+        text-align: center;
+        margin: auto;
+        padding: 7px;
+        width: 90vw;
+        cursor: pointer;
+        border-radius: 0px 0px 7px 7px;
+    }
+
+    menu {
+        margin: auto;
+    }
+
+    /*menu é equivalente a nav nesse caso*/
+    menu>ul {
+        list-style-type: none;
+    }
+
+    menu>ul>li>a {
+        padding: 7px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #123f15;
+        border-radius: 7px 7px 7px 7px;
+        color: whitesmoke;
+        margin: auto;
+        display: block;
+    }
+
+    menu>ul>li>a:hover {
+        background-color: #64af6e;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 7px;
+        width: 90vw;
+    }
+
+    main {
+        width: 90vw;
+        height: 100%;
+        margin: auto;
+        margin-top: 7px;
+    }
+
+    article>h2 {
+        padding-bottom: 17px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    article>p.paragrafo1 {
+        text-align: justify;
+        margin-bottom: 17px;
+        text-indent: 17px;
+    }
+
+    .banguela {
+        justify-content: space-evenly;
+        margin: 20px;
+        width: 20%;
+        border-radius: 7px 7px 7px 7px;
+        border-color: #123f15;
+        border-style: ridge;
+    }
+
+    footer {
+        width: 90vw;
+        margin: auto;
+    }
+
+}
+
+
+
+
+
+
+

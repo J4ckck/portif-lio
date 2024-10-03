@@ -5,8 +5,7 @@ DOCTYPE: Document Type Declaration-->
 <!--"html": Hiper Text Marked Language ou linguagem de marcação de hipertexto, é a tag raiz do documento-->
 
 <head>
-    <!--organizar metadados
-    sempre acima do body-->
+    <!--organizar metadados sempre acima do body-->
     <meta charset="UTF-8">
     <!--Forma de indicar qual loógica binária foi utilizada para armazenar caractéries dentro de bits
     “meta”: metadados; “charset”: conjunto de caractéries; “UTF-8”: conjunto de caractéries que inclui muitos idiomas-->
@@ -14,13 +13,12 @@ DOCTYPE: Document Type Declaration-->
     <!--name= viewport”: ; “content”: ; “width=device-width” indica que a largura da página deve ser igual a largura; 
      “initial-scale=1.0” indica que a página deve ser exibida com uma esc
     -->
+    <title>Contatos</title>
 
-    <script src="./assets/js/script.index.js"> </script>
+    <script src="./assets/js/script.contatos.js"> </script>
 
-    <title>Apresentação Pessoal</title>
-
-    <link rel="shortcut icon" href="./assets/favicon.png" type:"image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style.index.css">
+    <link rel="shortcut icon" href="/assets/fanarts.icon.png" type:"image/x-icon">
+    <link rel="stylesheet" href="/assets/css/style.contatos.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <!-- link para o css do menu mobile; link para o css do google fonts -->
@@ -29,10 +27,11 @@ DOCTYPE: Document Type Declaration-->
 <body onresize="mudouTamanho()">
     <header>
         <!--A Tag H1 serve para definir o texto como titulo-->
-        <h1>Quem sou?</h1>
+        <h1>Onde me encontrar?</h1>
     </header>
     <!-- Usando o google icons o menu é criado, junto com uma função usado no
       javascript para exibir o menu burger no evento de onclik-->
+
     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
         menu
     </span>
@@ -46,77 +45,50 @@ DOCTYPE: Document Type Declaration-->
             <li class="invisible"><A href="#"> desktop </A></li>
             <li class="invisible"><A href="#"> smart_tv </A></li> -->
 
-            <li><A href="index.html"> Inicio - Apresentação</A></li>
+            <li><A href="index.html"> Inicio - Apresentação </A></li>
             <li><A href="portifolio.html"> Portifólio </A></li>
             <li><A href="experiencias.habilidades.html"> Experiências e habilidades </A></li>
             <li><A href="contatos.html"> Contatos </A></li>
         </ul>
+
     </menu>
 
     <!-- Todas as imagens são oculta pelo atributo none, e a cada mudança de resolução
       de tela será exibido somente as imagens que pertence a cada tela-->
     <main>
-        <!--<section>
+        <button id="meuBotao">instagram</button>
+        <button id="meuBotao">linkedin</button>
+
+
+
+
+        <!-- <section> 
             <div>
                 <img src="/assents/foto_banguela.png" alt="foto-de-um-gato-preto-olhando-a grama" width="30%"
                     height="30%" </div>
-        </section>-->
-
-        <!-- <img src="./assets/icon-phone.png" alt="teste com celular" id="mobile">
-        <img src="./assets/icon-tablet.png" alt="teste com celular" id="tablet">
-        <img src="./assets/icon-print.png" alt="versão impressora" id="print">
-        <img src="./assets/icon-pc.png" alt="teste com desktop" id="pc">
-        <img src="./assets/icon-tv.png" alt="teste com smart tv" id="tv"> -->
-
-        <!-- Dentro  do main foi criado um div com um id para ser usado no Medias Queries
+        </section>
+        Dentro  do main foi criado um div com um id para ser usado no Medias Queries
          e dentro dele foi criado um div com um id para ser usado no Medias Queries
          onde a estrutura article será redimencionada para cada visualização de tela-->
+        <!--<article>
+            <h2>Suas fanarts podem vir parar aqui tbm! </h2>
+            --A Tag p serve para definir um paragrafo no texto
+    Aqui podemos continuar escrevendo--
+            <aside>
+             <p> 
+                caso queira enviar uma arte, o e-mail de contato do dono do Banguela é "jackjackchernake@gmail.com".
+            </p> 
+            </aside>
+        </article> 
 
-        <article>
-            <!-- <strong></strong> negrito -->
-                <!-- <em></em> itálico -->
-                <!-- <u></u> sublinhado -->
-                <!-- <s></s> tachado -->
+        <img src "./assets/banguela/banguela15.png" alt="desenho banguela feito por Nicole Teixeira" id="gato"> -->
 
-                    <h2>
-                        Jack Chernake
-                    </h2>
-                    <p><strong>Quem sou eu?</strong></p>
-                    <p>
-                        -Meu nome é Jack Valentine Chernake, tenho 16 anos e atualmente curso o 3°EM. Já tive diversos trabalhos informais, como vender minha arte em trabalhos de muralismo e vender Funkos Pop! em uma
-                        feira de variedades no shopping, hoje em dia ajudo meu pai na organização de torneios de vôlei que
-                        ele mesmo organiza, então sei lidar até com as pessoas mais insistentes, sou direto, organizado e
-                        costumo ser o líder em atividades em grupo.
-                    </p>
-            <h3>Hoobies </h3>
-            <!--A Tag p serve para definir um paragrafo no texto
-    Aqui podemos continuar escrevendo-->
-            <!--<aside></aside>-->
-            <p>
-                Ler,
-                confeccionar acessórios,
-                desenhar, estudar,
-                ouvir música,
-                dar sachê pro banguela(meu gato)
-            </p>
-            <h4>
-                Habilidades
-            </h4>
-            <p>
-                Sou sempre a liderança em trabalhos escolares, sou dedicado, metódico e na maioria das vezes busco o
-                jeito mais interessante e menos prático
-            </p>
-            <h5>
-                asdfghjk
-            </h5>
-        </article>
     </main>
 
     <footer>
-        <p>Feito por Jack 2024 </p>
+        <p> Feito por Jack Chernake 2024 </p>
     </footer>
-
-    </main>
 </body>
-<!--problemas encontrados: código não fechado, letras maiusculas, id não condizendo com o css-->
+<!--problemas encintrados: código não fechado, letras maiusculas, id não condizendo com o css-->
+
 </html>
