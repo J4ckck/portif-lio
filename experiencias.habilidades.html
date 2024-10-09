@@ -1,19 +1,9 @@
 <!DOCTYPE html>
-<!--A linha 1 não é uma tag e sim uma declaração para informar ao navegador qual versão do html estamos usando no arquivo
-DOCTYPE: Document Type Declaration-->
 <html lang="pt-br">
-<!--"html": Hiper Text Marked Language ou linguagem de marcação de hipertexto, é a tag raiz do documento-->
 
 <head>
-    <!--organizar metadados
-    sempre acima do body-->
     <meta charset="UTF-8">
-    <!--Forma de indicar qual loógica binária foi utilizada para armazenar caractéries dentro de bits
-    “meta”: metadados; “charset”: conjunto de caractéries; “UTF-8”: conjunto de caractéries que inclui muitos idiomas-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--name= viewport”: ; “content”: ; “width=device-width” indica que a largura da página deve ser igual a largura; 
-     “initial-scale=1.0” indica que a página deve ser exibida com uma esc
-    -->
     <title>Experiencias e habilidades</title>
 
     <script src="./assets/js/script.experiencias.habilidades.js"> </script>
@@ -27,25 +17,14 @@ DOCTYPE: Document Type Declaration-->
 
 <body onresize="mudouTamanho()">
     <header>
-        <!--A Tag H1 serve para definir o texto como titulo-->
         <h1>Experiências e habilidades</h1>
     </header>
-    <!-- Usando o google icons o menu é criado, junto com uma função usado no
-      javascript para exibir o menu burger no evento de onclik-->
-
     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
         menu
     </span>
-    <!-- Todos os links do menu pertence ao um conteiner com uma lista não numerada
-     e um id para ser usado no Medias Queries-->
 
     <menu id="itens">
         <ul>
-            <li class="invisible"><A href="#"> mobile </A></li>
-            <li class="invisible"><A href="#"> tablet </A></li>
-            <li class="invisible"><A href="#"> desktop </A></li>
-            <li class="invisible"><A href="#"> smart_tv </A></li>
-
             <li><A href="index.html"> Inicio -  Apresentação </A></li>
             <li><A href="portifolio.html"> Portifólio </A></li>
             <li><A href="experiencias.habilidades.html"> Experiências e habilidades </A></li>
@@ -53,36 +32,10 @@ DOCTYPE: Document Type Declaration-->
         </ul>
     </menu>
 
-    <!-- Todas as imagens são oculta pelo atributo none, e a cada mudança de resolução
-      de tela será exibido somente as imagens que pertence a cada tela-->
     <main>
-         <!--A Tag p serve para definir um paragrafo no texto
-    Aqui podemos continuar escrevendo-->
- <!--<aside></aside>-->
- 
-        <!--<section>
-            <div>
-                <img src="/assents/foto_banguela.png" alt="foto-de-um-gato-preto-olhando-a grama" width="30%"
-                    height="30%" </div>
-        </section>-->
-        <!-- 
-        <img src="./assets/icon-phone.png" alt="teste com celular" id="mobile">
-
-        <img src="./assets/icon-tablet.png" alt="teste com celular" id="tablet">
-
-        <img src="./assets/icon-print.png" alt="versão impressora" id="print">
-
-        <img src="./assets/icon-pc.png" alt="teste com desktop" id="pc">
-
-        <img src="./assets/foto_banguela.png" alt="teste com smart tv" id="tv"> -->
-
-        <!-- Dentro  do main foi criado um div com um id para ser usado no Medias Queries
-         e dentro dele foi criado um div com um id para ser usado no Medias Queries
-         onde a estrutura article será redimencionada para cada visualização de tela-->
         <article>
             <h2>Funko Pop </h2>
         </article>
-
     </main>
 
     <footer>
@@ -91,5 +44,4 @@ DOCTYPE: Document Type Declaration-->
 
     </main>
 </body>
-<!--problemas encontrados: código não fechado, letras maiusculas, id não condizendo com o css-->
 </html>

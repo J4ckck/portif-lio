@@ -17,18 +17,14 @@
 * {
     margin: 0;
     padding: 0;
-    /* calcular a borda em relação ao tamanho*/
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-/* definir o tamanho da tela sempre forçamdo o não extender a tela */
 
 html {
     height: 100vh;
 }
 
-/* definição do tamanho da tela */
 body {
     font-family: Arial, sans-serif;
     background-image: linear-gradient(to bottom, #123f15, #e7bfa5);
@@ -72,10 +68,6 @@ header>h1 {
 
 }
 
-.invisible {
-    display: none;
-}
-
 menu {
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -88,7 +80,6 @@ menu {
 
 }
 
-/*menu é equivalente a nav nesse caso*/
 menu>ul {
     list-style-type: none;
 }
@@ -121,7 +112,6 @@ main {
     margin-top: 7px;
     padding: 30px;
     text-align: center;
-
 }
 
 
@@ -130,7 +120,7 @@ span>#material-symbols-outlined {
     display: flex;
 }
 
-article>p.paragrafo1 {
+article>h2 {
     font-weight: bold;
     font-size: 18px;
     color: whitesmoke;
@@ -139,16 +129,6 @@ article>p.paragrafo1 {
     margin-bottom: 17px;
     text-indent: 17px;
 
-}
-
-img.banguela {
-    display: inline-block;
-    margin: 10px;
-    padding: 1%;
-    width: 20%;
-    border-radius: 8px;
-    border-color: #123f15;
-    border-style: ridge;
 }
 
 footer {
@@ -163,8 +143,7 @@ footer {
     margin: auto;
 }
 
-/* tablet 768 992 */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px){
     body {
         background-image: url("../back-print.png");
     }
@@ -185,7 +164,6 @@ footer {
         margin: auto;
     }
 
-    /*menu é equivalente a nav nesse caso*/
     menu>ul {
         list-style-type: none;
     }
@@ -202,8 +180,6 @@ footer {
     }
 
     menu>ul>li>a:hover {
-        background-color: #64af6e;
-        color: whitesmoke;
         text-decoration: none;
         padding: 7px;
         width: 90vw;
@@ -222,26 +198,10 @@ footer {
         margin: auto;
     }
 
-    article>p.paragrafo1 {
-        text-align: justify;
-        margin-bottom: 17px;
-        text-indent: 17px;
-    }
-
-    .banguela {
-        justify-content: space-evenly;
-        margin: 20px;
-        width: 20%;
-        border-radius: 7px 7px 7px 7px;
-        border-color: #123f15;
-        border-style: ridge;
-    }
-
     footer {
         width: 90vw;
         margin: auto;
     }
-
 }
 
 
