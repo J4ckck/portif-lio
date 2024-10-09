@@ -32,7 +32,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     background-image: linear-gradient(to bottom, #123f15, #e7bfa5);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: top;
     background-attachment: scroll;
     background-image: url("../back-print.png");
@@ -47,7 +47,7 @@ header {
 }
 
 header>h1 {
-    text-align: center;
+    text-align:center;
     color: #ffffff;
     padding: 3px;
     text-shadow: #45683c 5px 5px 10px;
@@ -165,6 +165,7 @@ article>h2 {
     color: #ffffff;
     text-shadow: #09310c;
     margin-bottom: 20px;
+    text-align: start;
 }
 
 article>h3 {

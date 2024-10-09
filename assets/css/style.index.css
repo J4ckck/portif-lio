@@ -34,7 +34,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     background-image: linear-gradient(to bottom, #123f15, #e7bfa5);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: top;
     background-attachment: scroll;
     background-image: url("../back-print.png");
@@ -133,13 +133,12 @@ main {
 
 }
 
-
 article>h2 {
     font-weight: bold;
     font-size: 18px;
     color: whitesmoke;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 17px;
     text-indent: 17px;
 
@@ -160,10 +159,30 @@ article>h3 {
     font-size: 18px;
     color: whitesmoke;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: justify;
+    text-align: center;
     margin-bottom: 17px;
     text-indent: 17px;
 
+}
+
+article>h4 {
+    font-weight: bold;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 17px;
+    text-indent: 17px;
+}
+
+article>h5 {
+    font-weight: bold;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 17px;
+    text-indent: 17px;
 }
 
 footer {

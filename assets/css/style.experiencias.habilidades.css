@@ -13,7 +13,6 @@
 /* desktop 992 px */
 /* smart_tv 1200 px */
 
-
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +27,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     background-image: linear-gradient(to bottom, #123f15, #e7bfa5);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: top;
     background-attachment: scroll;
     background-image: url("../back-print.png");
@@ -103,6 +102,11 @@ menu>ul>li>a:hover {
     width: 90vw;
 }
 
+span>#material-symbols-outlined {
+    font-size: 30px;
+    display: flex;
+}
+
 main {
     background-color: #3a493b;
     width: 90vw;
@@ -111,13 +115,7 @@ main {
     border-radius: 7px 7px 0px 0px;
     margin-top: 7px;
     padding: 30px;
-    text-align: center;
-}
-
-
-span>#material-symbols-outlined {
-    font-size: 30px;
-    display: flex;
+    /* text-align: center; */
 }
 
 article>h2 {
@@ -125,10 +123,38 @@ article>h2 {
     font-size: 18px;
     color: whitesmoke;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 17px;
+    /* text-indent: 17px; */
+}
+
+article>h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 17px;
+    text-indent: 17px;
+}
+
+article>h4 {
+    font-weight: bold;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 17px;
+    text-indent: 17px;
+}
+
+article>p{
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
     margin-bottom: 17px;
     text-indent: 17px;
-
 }
 
 footer {

@@ -1,11 +1,12 @@
 @charset "utf-8";
 
 /* colocar paleta de cores aqui: */
-/* .color1 { #3a493b }; */
+/* .color1 { #3a493b }; ver cinzento*/
 /* .color2 { #45683c };verde pastel */
 /* .color3 { #21572d }; verde forte */
-/* .color4 { #356441 }; */
-/* .color5 { #123f15 }; verde forte */
+/* .color4 { #356441 }; verde mais escuro*/
+/* .color5 { #123f15 }; verde forte arvore */
+/* .color6 { #398159 }; verde clarin */
 
 /* device breakpoints */
 /* mobile 600 px  */
@@ -27,7 +28,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     background-image: linear-gradient(to bottom, #123f15, #e7bfa5);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: top;
     background-attachment: scroll;
     background-image: url("../back-print.png");
@@ -116,16 +117,67 @@ span>#material-symbols-outlined {
     display: flex;
 }
 
-#meuBotao {
+a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+a:hover {
+    color: #398159;
+}
+
+#Botao {
     /* Estilos para o botão */
-    background-color: #123f15; /* Cor de fundo */
-    color: whitesmoke; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Arredondamento das bordas */
-    cursor: pointer; /* Cursor em forma de mão */
-  }
-  
+    background-color: #123f15;
+    /* Cor de fundo */
+    color: #398159;
+    /* Cor do texto */
+    padding: 20px;
+    /* Espaçamento interno */
+    border: none;
+    /* Sem borda */
+    border-radius: 30px;
+    /* Arredondamento das bordas */
+    cursor: pointer;
+    /* Cursor em forma de mão */
+}
+
+#Botao2 {
+    /* Estilos para o botão */
+    background-color: #123f15;
+    /* Cor de fundo */
+    color: #398159;
+    /* Cor do texto */
+    padding: 20px;
+    /* Espaçamento interno */
+    border: none;
+    /* Sem borda */
+    border-radius: 30px;
+    /* Arredondamento das bordas */
+    cursor: pointer;
+    /* Cursor em forma de mão */
+}
+
+#Botao3 {
+    /* Estilos para o botão */
+    background-color: #123f15;
+    /* Cor de fundo */
+    color: #398159;
+    /* Cor do texto */
+    padding: 20px;
+    /* Espaçamento interno */
+    border: none;
+    /* Sem borda */
+    border-radius: 30px;
+    /* Arredondamento das bordas */
+    cursor: pointer;
+    /* Cursor em forma de mão */
+}
+
 /* article>p.paragrafo1 {
     font-weight: bold;
     font-size: 18px;
@@ -151,6 +203,11 @@ footer {
 /* tablet 768 992 */
 @media screen and (min-width: 768px) {
     body {
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(to bottom, #123f15, #e7bfa5);
+        background-repeat: repeat;
+        background-position: top;
+        background-attachment: scroll;
         background-image: url("../back-print.png");
     }
 
