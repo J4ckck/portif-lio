@@ -47,7 +47,7 @@ header {
 }
 
 header>h1 {
-    text-align:center;
+    text-align: center;
     color: #ffffff;
     padding: 3px;
     text-shadow: #45683c 5px 5px 10px;
@@ -132,14 +132,13 @@ main {
 }
 
 .jackzin img {
-    width: 40%;
+    width: 30vw;
     margin: 10px;
     margin-bottom: 40px;
     padding: 0%;
     border-radius: 20px;
     border-color: #123f15;
     border-style: ridge;
-
 }
 
 .jackzin p {
@@ -160,13 +159,41 @@ span>#material-symbols-outlined {
 
 
 article>h2 {
+    /* font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-shadow: #09310c;
+    text-align:center; */
+ 
     font-size: 35px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffffff;
     text-shadow: #09310c;
     margin-bottom: 20px;
-    text-align: start;
+    margin-top: 20px;
 }
+
+#conteudo{
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#part01{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-shadow: #09310c;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* background-color: #8a8989; */
+    
+} 
+
 
 article>h3 {
     font-size: 35px;
@@ -263,9 +290,12 @@ footer {
     }
 
     article>h2 {
-        padding-bottom: 17px;
-        width: 90vw;
-        margin: auto;
+        font-size: 35px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #ffffff;
+        text-shadow: #09310c;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     article>p.paragrafo1 {
